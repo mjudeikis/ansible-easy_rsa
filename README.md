@@ -1,9 +1,7 @@
 easy_rsa
 ========
 
-[![Build Status](https://travis-ci.org/kbrebanov/ansible-easy_rsa.svg?branch=master)](https://travis-ci.org/kbrebanov/ansible-easy_rsa)
-
-Installs and configures easy-rsa
+Installs and configures easy-rsa for openVPN
 
 Requirements
 ------------
@@ -39,7 +37,7 @@ Install easy-rsa
 ```yaml
 - hosts: all
   roles:
-    - kbrebanov.easy_rsa
+    - ansible-easy_rsa
 ```
 
 Install easy-rsa and generate a client cert/key
@@ -49,15 +47,6 @@ Install easy-rsa and generate a client cert/key
     easy_rsa_clients:
       - client1
   roles:
-    - kbrebanov.easy_rsa
+    - ansible-easy_rsa
 ```
 
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-Kevin Brebanov

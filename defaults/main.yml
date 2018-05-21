@@ -12,3 +12,13 @@ easy_rsa_key_org: "Fort-Funston"
 easy_rsa_key_ou: "MyOrganizationalUnit"
 easy_rsa_key_province: "CA"
 easy_rsa_key_size: 2048
+
+
+server_cn: example.com
+client_cn_list:
+ - client1
+
+easy_rsa_version: 3
+easy_rsa_path: /usr/share/easy-rsa/
+openvpn_cert_dir: /etc/openvpn/ssl
+dh_param_lengh: 2048

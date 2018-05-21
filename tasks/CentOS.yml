@@ -1,2 +1,13 @@
 ---
 # tasks file for easy_rsa (CentOS specific)
+
+- name: Install easy-rsa packages
+  become: yes
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items:
+    - "{{ easy_rsa_packages }}"
+  tags:
+    - easy_rsa
